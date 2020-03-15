@@ -1,0 +1,19 @@
+.card-list {
+   background: #95dada;
+   border-radius: 5px;
+   padding: 25px;
+   transform: translateZ(0);
+   transition: transform 0.25s ease-out;
+   margin-bottom: 10px;
+   height: 400px;
+  }
+
+  .card-list:hover{
+      transform: scale(1.05);
+  }
+
+
+  .card-name{
+      font-size: 20px;
+      font-weight: 700;
+  }
