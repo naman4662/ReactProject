@@ -21,7 +21,12 @@
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: white;
+  font-family: 'Bigelow Rules', cursive;
+  ;
+}
+
+h1{
+  color: #4b5171;
 }
 
 .App-link {
@@ -35,4 +40,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+
+.monstor-head{
+  font-size: 120px;
+  font-family: 'Bigelow Rules', cursive;
+
 }

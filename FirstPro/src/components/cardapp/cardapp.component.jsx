@@ -2,8 +2,6 @@ import React from 'react';
 import { Card, Col } from 'react-bootstrap';
 
 export const Cardapp = (props) => {
-    console.log(props.monster.id)
-
     return (
         <Col lg={3}>
             <Card className="card-list">
