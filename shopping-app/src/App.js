@@ -1,9 +1,10 @@
 import React from 'react';
-import { Route, Router } from 'react-router-dom';
+import { Route, Switch } from 'react-router-dom';
 import './App.css';
 import './pages/homepage/homepage.component'
 import HomePage from './pages/homepage/homepage.component';
 import NavBarFunc from './components/navbar.component';
+import ShopPage from './pages/shop/shop.component';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 const HatsPage = (props) =>{
@@ -19,10 +20,13 @@ const HatsPage = (props) =>{
 function App() {
   return (
       <div>
-          <Route exact path='/shop/Hats' component={HatsPage} />
-          <NavBarFunc />
-          <HomePage />
-       
+        <NavBarFunc />
+        <Switch> 
+          <Route exact path='/' component={HomePage} />
+          <Route exact path='/shop' component={ShopPage} />
+        </Switch>
+          
+                 
       </div>
 
 
