@@ -1,0 +1,26 @@
+body{
+    font-family: 'Lobster', cursive;
+    font-size: 5rem;
+    background-color: #000839;
+    color: white;
+}
+
+.rcp{
+    width: 250px;
+    height: 250px;
+}
+
+.rcp-button{
+    background-color: white;
+    border-color: blue;
+}
+
+.rcp-button:hover{
+    background-color: #ffa41b;
+}
+
+.rcp-names{
+    text-align: center;
+    font-size: 3rem;
+
+}

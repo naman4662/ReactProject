@@ -62,6 +62,14 @@ function attackMonster(mode){
 
 
 function attackHandler(){
+    // try{
+    //     throw {message :"Error"}
+    // }catch(error){
+    //     console.log(error)
+    // }finally{
+    //     console.log("Always")
+    // }
+    
     writeToLogs("ATTACK")
     attackMonster("ATTACK")
 

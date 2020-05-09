@@ -1,0 +1,19 @@
+.selectData{
+    border-radius: 25px;
+    border: 1px solid #417690;
+    min-width: 100px;
+    display: inline-block;
+    padding:10px;
+    margin:5px;
+    background-color:#417690;
+    color:#efdd5d
+}
+
+.close-btn{
+    margin-left: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+    text-shadow: 0 1px 0 white;
+    opacity: .5;
+}
