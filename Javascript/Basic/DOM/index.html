@@ -1,0 +1,124 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css" integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="style.css">
+    <title>Hello, world!</title>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="#">Featured Movies</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <button class="btn btn-outline-success my-2 my-sm-0" data-toggle="modal" data-target="#moview-modal"  type="submit" id="addMoviewbtn">Add Movies</button>
+        </div>
+      </nav>
+
+      <div class="container">
+        <section class="movies">
+          <div class="row">
+            <div class="col-12" id="personal-movies">
+              <h1 >Your personal movie database</h1>
+            </div>
+          </div>
+          <div class="modal slide-top" tabindex="-1" role="dialog" id="moview-modal">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title">Add movies</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <div class="container">
+                    <form>
+                      <div class="form-group">
+                        <label for="title">Movie title</label>
+                        <input type="text" class="form-control" name="title" id="title">
+                      </div>
+                      <div class="form-group">
+                        <label for="image-url">Image URL</label>
+                        <input type="text" class="form-control" name="image-url" id="image-url">
+                      </div>
+                      <div class="form-group">
+                        <label for="rating">Rating</label>
+                        <input type="number" class="form-control"
+                        step="1" max="5" min="1" name="rating" id="rating">
+                      </div>
+                    </form>
+                    <!-- <form>
+                     
+                     
+                      <div class="row">
+                        <label for="rating">Rating</label>
+                        <input type="number" 
+                        step="1" max="5" min="1" name="rating" id="rating">
+                      </div>
+                    </form> -->
+                  
+                  </div>
+                  
+                 
+                 
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary" data-dismiss="modal">Add</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div class="moview-list container">
+        <ul>
+          <li class="mvi_list">
+            
+          </li>
+
+          
+        </ul>
+      </div>
+    
+
+      <div class="modal" tabindex="-1" role="dialog" id="delModal">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Delete Movie</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <p>Do you want to remove the movie ?? </p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-primary" id="movieDel">Yes</button>
+              <button type="button" class="btn btn-secondary" id="delModal">Close</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

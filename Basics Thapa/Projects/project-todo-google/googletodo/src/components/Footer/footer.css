@@ -1,0 +1,8 @@
+.main-footer{
+    display: flex;
+    justify-content: center;
+    background-color:#424242;
+    font-family: 'Dancing Script', cursive;
+    letter-spacing: 5px;
+
+}

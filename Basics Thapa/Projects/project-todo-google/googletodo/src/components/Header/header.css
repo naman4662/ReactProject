@@ -1,0 +1,10 @@
+.main-header{
+    width: 100%;
+    height: 10vh;
+    font-family: 'Dancing Script', cursive;
+    background-color: #fbcc57;
+    display: flex;
+    justify-content: center;
+    letter-spacing: 10px;
+    font-size: 20px;
+}

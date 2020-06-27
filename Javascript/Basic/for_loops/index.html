@@ -5,8 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
   </head>
   <body>
     <h1>Hello Naman</h1>
@@ -15,13 +24,76 @@
       <p>WOrking with DOM</p>
     </div>
 
-    <div class="section1">
-      <label for="" class="selectData"> Naman Agarwal<span class="close-btn" ocl>&times;</span>
-      </label>
+    <ul id="testul">
+      <li>Item 1</li>
+      <li>Item 2</li>
+      <li>Item 3</li>
+    </ul>
 
-      <label for="" class="selectData"> Naman<span class="close-btn">&times;</span>
-      </label>
+    <div class="section1">
+      <div class="d-flex flex-row bd-highlight mb-3">
+        <div  class="p-2 flex-fill bd-highlight">
+          <select class="custom-select" size="10" id="selectBoxLeft">
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+        </div>
+        <div class="p-2 flex-fill bd-highlight">
+          <div class="p-2 bd-highlight">
+              <button type="button" class="btn btn-primary btn-lg btn-block" id="btnMoveRight">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </div>
+          <div class="p-2 bd-highlight">
+            <button type="button" class="btn btn-primary btn-lg btn-block" id="btnMoveLeft" >
+              <i class="fas fa-arrow-left"></i>
+            </button>
+          </div>
+        </div>
+        <div  class="p-2 flex-fill bd-highlight">
+          <select
+            class="custom-select"
+            size="10"
+            id="selectBoxRight"
+            name="selectBoxRight"
+          >
+          </select>
+        </div>
+      </div>
     </div>
+      </div>
+          
+    </div>
+    <!-- <script src="app.js"></script> -->
+    <!-- <script src="selectors.js"></script> -->
+    <script>
+      const selectBL = document.getElementById("selectBoxLeft");
+      const selectBR = document.getElementById("selectBoxRight");
+      const btnMtR = document.getElementById("btnMoveRight");
+      const btnMtL = document.getElementById("btnMoveLeft");
+
+      function MoveToRightBox(e) {
+        selectBR.append(e.target);
+      }
+
+      function MoveToLeftBox(e) {
+        selectBL.append(e.target);
+      }
+
+      function btnMoveToRightBox() {
+        selectBR.append(selectBL.options[selectBL.selectedIndex]);
+      }
+
+      function btnMoveToLeftBox() {
+        selectBL.append(selectBR.options[selectBR.selectedIndex]);
+      }
+
+      selectBL.addEventListener("dblclick", MoveToRightBox);
+      selectBR.addEventListener("dblclick", MoveToLeftBox);
+      btnMtR.addEventListener("click", btnMoveToRightBox);
+      btnMtL.addEventListener("click", btnMoveToLeftBox);
+    </script>
     <script
       src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
       integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
@@ -37,7 +109,5 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
       crossorigin="anonymous"
     ></script>
-    <script src="app.js"></script>
-    <script src="selectors.js"></script>
   </body>
 </html>

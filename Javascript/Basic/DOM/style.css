@@ -1,0 +1,49 @@
+.slide-top {
+  -webkit-animation: slide-top 0.5s ease-out reverse forwards;
+  animation: slide-top 0.5s ease-out reverse forwards;
+}
+
+.mvi_list {
+  list-style: none;
+}
+
+.card-title{
+    text-transform: uppercase;
+    display: block;
+
+}
+
+.list-btn{
+    display: block;
+    background-color: #ffd31d;
+}
+.card-img-top{
+    margin:10px;
+    height: 250px;
+    width: 100%;
+}
+
+#modelDialogue{
+  visibility: none;
+}
+
+@-webkit-keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+}
+@keyframes slide-top {
+  0% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+  100% {
+    -webkit-transform: translateY(-100px);
+    transform: translateY(-100px);
+  }
+}
