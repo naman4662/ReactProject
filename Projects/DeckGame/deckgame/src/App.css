@@ -1,0 +1,32 @@
+.App {
+  text-align: center;
+  background-color: black;
+  color: white;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+.App h1{
+  margin: 0;
+}
+
+.dealButton{
+  width: 150px;
+  height: 40px;
+  margin: 10px;
+  background-color: #2e8b57;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 2px;
+  font-size: 20px;
+}
+
+.mainImage{
+  display: flex;
+  justify-content: center;
+}
+.imageDisplay{
+  margin-top: 30px;
+  
+}
