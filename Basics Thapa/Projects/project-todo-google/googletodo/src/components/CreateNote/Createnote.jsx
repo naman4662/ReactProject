@@ -20,8 +20,10 @@ const Createnote = (props) => {
     });
   };
 
-  const addEvent = () => {
+  const addEvent = (event) => {
     props.passNote(note)
+    event.preventDefault()
+
   }
 
   return (
